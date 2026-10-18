@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-10-18T09:18:10.673Z",
+ "updatedAt": "2026-10-18T09:21:06.371Z",
  "screens": {
   "scr_8efde7d8": {
    "id": "scr_8efde7d8",
@@ -86,6 +86,95 @@
     "form:destination city",
     "form:service",
     "h:new shipment"
+   ],
+   "baseAs": [
+    "form"
+   ]
+  },
+  "scr_ae36c1ea": {
+   "id": "scr_ae36c1ea",
+   "name": "Welcome back",
+   "pattern": "/",
+   "title": "Sign in · ShipTrack",
+   "landmarks": [
+    "b:log in",
+    "f:password",
+    "f:work email",
+    "h:welcome back"
+   ],
+   "fields": [
+    "Work email",
+    "Password"
+   ],
+   "buttons": [
+    "Log in"
+   ],
+   "columns": [],
+   "navLinks": [],
+   "seen": 9,
+   "firstSeen": "2026-10-18T09:20:50.684Z",
+   "lastSeen": "2026-10-18T09:21:06.203Z",
+   "sources": {
+    "flow": 9
+   },
+   "errorsShown": [],
+   "runAt": "2026-10-18T09:21:06.203Z",
+   "runSet": [
+    "b:log in",
+    "f:password",
+    "f:work email",
+    "h:welcome back"
+   ],
+   "h1s": [
+    "Welcome back"
+   ],
+   "titles": [
+    "Sign in · ShipTrack"
+   ],
+   "offers": [
+    "log in"
+   ],
+   "offersAt": "2026-10-18T09:21:06.203Z",
+   "meaning": [
+    "b:log in",
+    "form:password",
+    "form:work email",
+    "h:welcome back"
+   ],
+   "meaningAt": "2026-10-18T09:21:06.203Z",
+   "components": [
+    {
+     "kind": "form",
+     "as": "form",
+     "fields": [
+      "work email",
+      "password"
+     ]
+    }
+   ],
+   "runMeaning": [
+    "b:log in",
+    "form:password",
+    "form:work email",
+    "h:welcome back"
+   ],
+   "runComponents": [
+    {
+     "kind": "form",
+     "as": "form",
+     "fields": [
+      "work email",
+      "password"
+     ]
+    }
+   ],
+   "missing": {},
+   "quiet": 2,
+   "meaningBase": [
+    "b:log in",
+    "form:password",
+    "form:work email",
+    "h:welcome back"
    ],
    "baseAs": [
     "form"
@@ -192,14 +281,14 @@
    "buttons": [],
    "columns": [],
    "navLinks": [],
-   "seen": 9,
+   "seen": 18,
    "firstSeen": "2026-10-18T09:18:00.815Z",
-   "lastSeen": "2026-10-18T09:18:10.519Z",
+   "lastSeen": "2026-10-18T09:21:06.203Z",
    "sources": {
-    "flow": 9
+    "flow": 18
    },
    "errorsShown": [],
-   "runAt": "2026-10-18T09:18:10.519Z",
+   "runAt": "2026-10-18T09:21:06.203Z",
    "runSet": [
     "h:tracking ##"
    ],
@@ -211,22 +300,111 @@
    ],
    "h1HadId": true,
    "offers": [],
-   "offersAt": "2026-10-18T09:18:10.519Z",
+   "offersAt": "2026-10-18T09:21:06.203Z",
    "meaning": [
     "h:tracking"
    ],
-   "meaningAt": "2026-10-18T09:18:10.519Z",
+   "meaningAt": "2026-10-18T09:21:06.203Z",
    "components": [],
    "runMeaning": [
     "h:tracking"
    ],
    "runComponents": [],
    "missing": {},
-   "quiet": 2,
+   "quiet": 5,
    "meaningBase": [
     "h:tracking"
    ],
    "baseAs": []
+  },
+  "scr_ea92b1c8": {
+   "id": "scr_ea92b1c8",
+   "name": "Create a shipment",
+   "pattern": "/new",
+   "title": "New shipment · ShipTrack",
+   "landmarks": [
+    "b:confirm",
+    "f:deliver to (city)",
+    "f:service",
+    "h:create a shipment"
+   ],
+   "fields": [
+    "Deliver to (city)",
+    "Service"
+   ],
+   "buttons": [
+    "Confirm"
+   ],
+   "columns": [],
+   "navLinks": [],
+   "seen": 9,
+   "firstSeen": "2026-10-18T09:20:50.684Z",
+   "lastSeen": "2026-10-18T09:21:06.203Z",
+   "sources": {
+    "flow": 9
+   },
+   "errorsShown": [],
+   "runAt": "2026-10-18T09:21:06.203Z",
+   "runSet": [
+    "b:confirm",
+    "f:deliver to (city)",
+    "f:service",
+    "h:create a shipment"
+   ],
+   "h1s": [
+    "Create a shipment"
+   ],
+   "titles": [
+    "New shipment · ShipTrack"
+   ],
+   "offers": [
+    "confirm"
+   ],
+   "offersAt": "2026-10-18T09:21:06.203Z",
+   "meaning": [
+    "b:confirm",
+    "form:deliver to (city)",
+    "form:service",
+    "h:create a shipment"
+   ],
+   "meaningAt": "2026-10-18T09:21:06.203Z",
+   "components": [
+    {
+     "kind": "form",
+     "as": "form",
+     "fields": [
+      "deliver to (city)",
+      "service"
+     ]
+    }
+   ],
+   "runMeaning": [
+    "b:confirm",
+    "form:deliver to (city)",
+    "form:service",
+    "h:create a shipment"
+   ],
+   "runComponents": [
+    {
+     "kind": "form",
+     "as": "form",
+     "fields": [
+      "deliver to (city)",
+      "service"
+     ]
+    }
+   ],
+   "missing": {},
+   "quiet": 2,
+   "meaningBase": [
+    "b:confirm",
+    "form:deliver to (city)",
+    "form:service",
+    "h:create a shipment"
+   ],
+   "baseAs": [
+    "form"
+   ]
   },
   "scr_fb5eb82c": {
    "id": "scr_fb5eb82c",
@@ -234,15 +412,13 @@
    "pattern": "/dashboard",
    "title": "Shipments · ShipTrack",
    "landmarks": [
-    "b:new shipment",
-    "c:order",
-    "c:status",
-    "c:to",
+    "b:create shipment",
     "h:shipments"
    ],
    "fields": [],
    "buttons": [
-    "New shipment"
+    "New shipment",
+    "Create shipment"
    ],
    "columns": [
     "Order",
@@ -250,20 +426,17 @@
     "Status"
    ],
    "navLinks": [],
-   "seen": 12,
+   "seen": 24,
    "firstSeen": "2026-10-18T09:18:00.815Z",
-   "lastSeen": "2026-10-18T09:18:10.519Z",
+   "lastSeen": "2026-10-18T09:21:06.203Z",
    "sources": {
-    "flow": 12
+    "flow": 24
    },
    "errorsShown": [],
-   "runAt": "2026-10-18T09:18:10.519Z",
+   "runAt": "2026-10-18T09:21:06.203Z",
    "runSet": [
-    "c:order",
-    "c:status",
-    "c:to",
     "h:shipments",
-    "b:new shipment"
+    "b:create shipment"
    ],
    "h1s": [
     "Shipments"
@@ -272,23 +445,22 @@
     "Shipments · ShipTrack"
    ],
    "offers": [
-    "##",
-    "new shipment",
-    "/dashboard"
+    "order ##",
+    "/dashboard",
+    "create shipment"
    ],
-   "offersAt": "2026-10-18T09:18:10.519Z",
+   "offersAt": "2026-10-18T09:21:06.203Z",
    "meaning": [
-    "b:new shipment",
     "collection:order",
     "collection:status",
     "collection:to",
     "h:shipments"
    ],
-   "meaningAt": "2026-10-18T09:18:10.519Z",
+   "meaningAt": "2026-10-18T09:21:06.203Z",
    "components": [
     {
      "kind": "collection",
-     "as": "table",
+     "as": "cards",
      "fields": [
       "order",
       "to",
@@ -298,7 +470,6 @@
     }
    ],
    "runMeaning": [
-    "b:new shipment",
     "collection:order",
     "collection:status",
     "collection:to",
@@ -307,7 +478,7 @@
    "runComponents": [
     {
      "kind": "collection",
-     "as": "table",
+     "as": "cards",
      "fields": [
       "order",
       "to",
@@ -317,8 +488,9 @@
     }
    ],
    "missing": {},
-   "quiet": 2,
+   "quiet": 1,
    "meaningBase": [
+    "b:new shipment",
     "collection:order",
     "collection:status",
     "collection:to",
@@ -326,10 +498,59 @@
    ],
    "baseAs": [
     "table"
+   ],
+   "changes": [
+    {
+     "at": "2026-10-18T09:20:50.684Z",
+     "added": [
+      "b:create shipment"
+     ],
+     "removed": []
+    },
+    {
+     "at": "2026-10-18T09:21:06.203Z",
+     "added": [],
+     "removed": [
+      "b:new shipment",
+      "c:order",
+      "c:status",
+      "c:to"
+     ],
+     "shows": {
+      "added": [],
+      "removed": [
+       "b:new shipment"
+      ]
+     }
+    }
    ]
   }
  },
  "transitions": {
+  "(start)|open:/|scr_ae36c1ea": {
+   "key": "(start)|open:/|scr_ae36c1ea",
+   "from": "(start)",
+   "to": "scr_ae36c1ea",
+   "action": {
+    "type": "open",
+    "label": "/"
+   },
+   "count": 3,
+   "ok": 3,
+   "fail": 0,
+   "flows": [
+    "Customer can create and track a shipment"
+   ],
+   "apis": [],
+   "firstSeen": "2026-10-18T09:20:50.684Z",
+   "lastSeen": "2026-10-18T09:21:06.203Z",
+   "url": "/",
+   "samples": [
+    154,
+    74,
+    71
+   ]
+  },
   "(start)|open:/|scr_cae0f7dd": {
    "key": "(start)|open:/|scr_cae0f7dd",
    "from": "(start)",
@@ -431,6 +652,50 @@
     605
    ]
   },
+  "scr_ae36c1ea|click:log in|scr_fb5eb82c": {
+   "key": "scr_ae36c1ea|click:log in|scr_fb5eb82c",
+   "from": "scr_ae36c1ea",
+   "to": "scr_fb5eb82c",
+   "action": {
+    "type": "click",
+    "label": "Log in"
+   },
+   "count": 3,
+   "ok": 3,
+   "fail": 0,
+   "flows": [
+    "Customer can create and track a shipment"
+   ],
+   "apis": [
+    "POST /api/login",
+    "GET /api/orders"
+   ],
+   "firstSeen": "2026-10-18T09:20:50.684Z",
+   "lastSeen": "2026-10-18T09:21:06.203Z",
+   "target": {
+    "describe": "Log in",
+    "role": "button"
+   },
+   "waitFor": "POST /api/login",
+   "inputs": [
+    {
+     "type": "fill",
+     "label": "Work email",
+     "value": "{{user}}",
+     "secret": false
+    },
+    {
+     "type": "fill",
+     "label": "Password",
+     "secret": true
+    }
+   ],
+   "samples": [
+    1681,
+    1636,
+    1624
+   ]
+  },
   "scr_cae0f7dd|click:sign in|scr_fb5eb82c": {
    "key": "scr_cae0f7dd|click:sign in|scr_fb5eb82c",
    "from": "scr_cae0f7dd",
@@ -507,6 +772,78 @@
     593
    ]
   },
+  "scr_ea92b1c8|click:confirm|scr_e11db351": {
+   "key": "scr_ea92b1c8|click:confirm|scr_e11db351",
+   "from": "scr_ea92b1c8",
+   "to": "scr_e11db351",
+   "action": {
+    "type": "click",
+    "label": "Confirm"
+   },
+   "count": 3,
+   "ok": 3,
+   "fail": 0,
+   "flows": [
+    "Customer can create and track a shipment"
+   ],
+   "apis": [
+    "POST /api/orders",
+    "GET /api/orders/:id"
+   ],
+   "firstSeen": "2026-10-18T09:20:50.684Z",
+   "lastSeen": "2026-10-18T09:21:06.203Z",
+   "target": {
+    "describe": "Confirm",
+    "role": "button"
+   },
+   "waitFor": "POST /api/orders",
+   "inputs": [
+    {
+     "type": "fill",
+     "label": "Deliver to (city)",
+     "value": "Vijayawada",
+     "secret": false
+    },
+    {
+     "type": "select",
+     "label": "Service",
+     "value": "Express",
+     "secret": false
+    }
+   ],
+   "samples": [
+    1807,
+    1704,
+    1660
+   ]
+  },
+  "scr_fb5eb82c|click:create shipment|scr_ea92b1c8": {
+   "key": "scr_fb5eb82c|click:create shipment|scr_ea92b1c8",
+   "from": "scr_fb5eb82c",
+   "to": "scr_ea92b1c8",
+   "action": {
+    "type": "click",
+    "label": "Create shipment"
+   },
+   "count": 3,
+   "ok": 3,
+   "fail": 0,
+   "flows": [
+    "Customer can create and track a shipment"
+   ],
+   "apis": [],
+   "firstSeen": "2026-10-18T09:20:50.684Z",
+   "lastSeen": "2026-10-18T09:21:06.203Z",
+   "target": {
+    "describe": "Create shipment",
+    "role": "button"
+   },
+   "samples": [
+    1568,
+    1555,
+    1526
+   ]
+  },
   "scr_fb5eb82c|click:new shipment|scr_8efde7d8": {
    "key": "scr_fb5eb82c|click:new shipment|scr_8efde7d8",
    "from": "scr_fb5eb82c",
@@ -575,8 +912,8 @@
     "type": "open",
     "label": "/dashboard"
    },
-   "count": 3,
-   "ok": 3,
+   "count": 6,
+   "ok": 6,
    "fail": 0,
    "flows": [
     "Customer can create and track a shipment"
@@ -585,12 +922,15 @@
     "GET /api/orders"
    ],
    "firstSeen": "2026-10-18T09:18:00.815Z",
-   "lastSeen": "2026-10-18T09:18:10.519Z",
+   "lastSeen": "2026-10-18T09:21:06.203Z",
    "url": "/dashboard",
    "samples": [
     62,
     80,
-    56
+    56,
+    53,
+    95,
+    53
    ]
   }
  },
@@ -600,19 +940,22 @@
    "method": "DELETE",
    "pattern": "/api/orders/:id",
    "statuses": {
-    "204": 3
+    "204": 6
    },
-   "count": 3,
+   "count": 6,
    "screens": [],
    "sources": {
-    "flow": 3
+    "flow": 6
    },
    "firstSeen": "2026-10-18T09:18:00.815Z",
-   "lastSeen": "2026-10-18T09:18:10.519Z",
+   "lastSeen": "2026-10-18T09:21:06.203Z",
    "samples": [
     28,
     25,
-    29
+    29,
+    36,
+    51,
+    31
    ]
   },
   "GET /api/orders": {
@@ -620,18 +963,18 @@
    "method": "GET",
    "pattern": "/api/orders",
    "statuses": {
-    "200": 7
+    "200": 14
    },
-   "count": 7,
+   "count": 14,
    "screens": [
     "scr_fb5eb82c"
    ],
    "sources": {
-    "flow": 6,
-    "api": 1
+    "flow": 12,
+    "api": 2
    },
    "firstSeen": "2026-10-18T09:18:00.815Z",
-   "lastSeen": "2026-10-18T09:18:10.525Z",
+   "lastSeen": "2026-10-18T09:21:06.212Z",
    "samples": [
     71,
     53,
@@ -639,7 +982,14 @@
     52,
     60,
     69,
-    35
+    35,
+    60,
+    68,
+    48,
+    71,
+    62,
+    47,
+    32
    ],
    "shape": [
     {
@@ -649,7 +999,7 @@
      "city": "string"
     }
    ],
-   "shapeSamples": 7,
+   "shapeSamples": 14,
    "always": []
   },
   "GET /api/orders/:id": {
@@ -657,35 +1007,38 @@
    "method": "GET",
    "pattern": "/api/orders/:id",
    "statuses": {
-    "200": 4
+    "200": 8
    },
-   "count": 4,
+   "count": 8,
    "screens": [
     "scr_e11db351"
    ],
    "sources": {
-    "flow": 3,
-    "api": 1
+    "flow": 6,
+    "api": 2
    },
    "firstSeen": "2026-10-18T09:18:00.815Z",
-   "lastSeen": "2026-10-18T09:18:10.525Z",
+   "lastSeen": "2026-10-18T09:21:06.212Z",
    "samples": [
     59,
     61,
     41,
-    38
+    38,
+    62,
+    43,
+    53,
+    22
    ],
    "shape": {
-    "id": "number",
+    "id": "number|string",
     "status": "string",
-    "speed": "string",
+    "speed": "?string",
     "city": "string"
    },
-   "shapeSamples": 4,
+   "shapeSamples": 8,
    "always": [
     "id",
     "status",
-    "speed",
     "city"
    ]
   },
@@ -694,21 +1047,24 @@
    "method": "POST",
    "pattern": "/api/login",
    "statuses": {
-    "0": 3
+    "0": 6
    },
-   "count": 3,
+   "count": 6,
    "screens": [
     "scr_fb5eb82c"
    ],
    "sources": {
-    "flow": 3
+    "flow": 6
    },
    "firstSeen": "2026-10-18T09:18:00.815Z",
-   "lastSeen": "2026-10-18T09:18:10.519Z",
+   "lastSeen": "2026-10-18T09:21:06.203Z",
    "samples": [
     72,
     63,
-    77
+    77,
+    96,
+    94,
+    76
    ]
   },
   "POST /api/orders": {
@@ -716,18 +1072,18 @@
    "method": "POST",
    "pattern": "/api/orders",
    "statuses": {
-    "201": 7
+    "201": 14
    },
-   "count": 7,
+   "count": 14,
    "screens": [
     "scr_e11db351"
    ],
    "sources": {
-    "flow": 6,
-    "api": 1
+    "flow": 12,
+    "api": 2
    },
    "firstSeen": "2026-10-18T09:18:00.815Z",
-   "lastSeen": "2026-10-18T09:18:10.525Z",
+   "lastSeen": "2026-10-18T09:21:06.212Z",
    "samples": [
     71,
     67,
@@ -735,7 +1091,14 @@
     81,
     39,
     66,
-    27
+    27,
+    43,
+    105,
+    43,
+    95,
+    45,
+    107,
+    57
    ],
    "shape": {
     "id": "number",
@@ -743,7 +1106,7 @@
     "speed": "string",
     "city": "string"
    },
-   "shapeSamples": 5,
+   "shapeSamples": 9,
    "always": [
     "id",
     "status",
@@ -759,9 +1122,9 @@
    "field": "city",
    "screen": "scr_e11db351",
    "label": "Destination",
-   "hits": 3,
+   "hits": 6,
    "misses": 0,
-   "lastSeen": "2026-10-18T09:18:10.519Z"
+   "lastSeen": "2026-10-18T09:21:06.203Z"
   },
   "GET /api/orders/:id#speed@scr_e11db351": {
    "id": "GET /api/orders/:id#speed@scr_e11db351",
@@ -769,9 +1132,9 @@
    "field": "speed",
    "screen": "scr_e11db351",
    "label": "Service",
-   "hits": 3,
+   "hits": 6,
    "misses": 0,
-   "lastSeen": "2026-10-18T09:18:10.519Z"
+   "lastSeen": "2026-10-18T09:21:06.203Z"
   },
   "GET /api/orders/:id#status@scr_e11db351": {
    "id": "GET /api/orders/:id#status@scr_e11db351",
@@ -779,9 +1142,9 @@
    "field": "status",
    "screen": "scr_e11db351",
    "label": "Status",
-   "hits": 3,
+   "hits": 6,
    "misses": 0,
-   "lastSeen": "2026-10-18T09:18:10.519Z"
+   "lastSeen": "2026-10-18T09:21:06.203Z"
   },
   "POST /api/orders#city@scr_e11db351": {
    "id": "POST /api/orders#city@scr_e11db351",
@@ -814,5 +1177,5 @@
    "lastSeen": "2026-10-18T09:18:10.519Z"
   }
  },
- "runs": 4
+ "runs": 8
 }
