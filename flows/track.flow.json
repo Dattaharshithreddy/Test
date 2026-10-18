@@ -27,7 +27,7 @@
       {
         "type": "fill",
         "target": {
-          "describe": "Email",
+          "describe": "Work email",
           "fp": {
             "tag": "input",
             "type": "email",
@@ -109,7 +109,7 @@
       {
         "type": "click",
         "target": {
-          "describe": "Sign in",
+          "describe": "Log in",
           "role": "button",
           "fp": {
             "tag": "button",
