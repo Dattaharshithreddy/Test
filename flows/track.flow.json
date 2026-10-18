@@ -1,0 +1,423 @@
+{
+  "relay": 1,
+  "kind": "flow",
+  "name": "Customer can create and track a shipment",
+  "baseUrl": "{{webUrl}}",
+  "variables": [
+    {
+      "key": "webUrl",
+      "value": "http://127.0.0.1:4020"
+    },
+    {
+      "key": "user",
+      "value": "qa@shiptrack.test"
+    },
+    {
+      "key": "password",
+      "value": "secret123"
+    }
+  ],
+  "session": {
+    "name": "shiptrack-qa",
+    "steps": [
+      {
+        "type": "open",
+        "url": "/"
+      },
+      {
+        "type": "fill",
+        "target": {
+          "describe": "Email",
+          "fp": {
+            "tag": "input",
+            "type": "email",
+            "role": "textbox",
+            "name": "Email",
+            "label": "Email",
+            "text": "",
+            "testId": null,
+            "id": "email",
+            "idGenerated": false,
+            "nameAttr": "email",
+            "placeholder": "",
+            "href": "",
+            "classes": [],
+            "nearText": "Email",
+            "column": "",
+            "container": null,
+            "css": "#email",
+            "box": {
+              "x": 260,
+              "y": 203,
+              "w": 760,
+              "h": 33
+            },
+            "vw": 1280,
+            "vh": 800,
+            "ok": [
+              "role",
+              "label",
+              "id",
+              "nameAttr",
+              "css"
+            ]
+          }
+        },
+        "value": "{{user}}"
+      },
+      {
+        "type": "fill",
+        "target": {
+          "describe": "Password",
+          "fp": {
+            "tag": "input",
+            "type": "password",
+            "role": "textbox",
+            "name": "Password",
+            "label": "Password",
+            "text": "",
+            "testId": null,
+            "id": "password",
+            "idGenerated": false,
+            "nameAttr": "password",
+            "placeholder": "",
+            "href": "",
+            "classes": [],
+            "nearText": "Password",
+            "column": "",
+            "container": null,
+            "css": "#password",
+            "box": {
+              "x": 260,
+              "y": 269,
+              "w": 760,
+              "h": 33
+            },
+            "vw": 1280,
+            "vh": 800,
+            "ok": [
+              "role",
+              "label",
+              "id",
+              "nameAttr",
+              "css"
+            ]
+          }
+        },
+        "value": "{{password}}"
+      },
+      {
+        "type": "click",
+        "target": {
+          "describe": "Sign in",
+          "role": "button",
+          "fp": {
+            "tag": "button",
+            "type": "submit",
+            "role": "button",
+            "name": "Sign in",
+            "label": "",
+            "text": "Sign in",
+            "testId": null,
+            "id": "login-btn",
+            "idGenerated": false,
+            "nameAttr": "",
+            "placeholder": "",
+            "href": "",
+            "classes": [],
+            "nearText": "Password",
+            "column": "",
+            "container": null,
+            "css": "#login-btn",
+            "box": {
+              "x": 260,
+              "y": 318,
+              "w": 78,
+              "h": 35
+            },
+            "vw": 1280,
+            "vh": 800,
+            "ok": [
+              "role",
+              "id",
+              "css"
+            ]
+          }
+        },
+        "waitFor": "POST /api/login",
+        "effect": {
+          "url": "/dashboard",
+          "requests": [
+            "GET /api/orders",
+            "GET /dashboard",
+            "POST /api/login"
+          ]
+        }
+      },
+      {
+        "type": "check",
+        "expect": "url",
+        "value": "/dashboard"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "type": "api",
+      "method": "POST",
+      "url": "/api/orders",
+      "headers": {
+        "Authorization": "Bearer demo-token"
+      },
+      "body": {
+        "city": "Hyderabad",
+        "speed": "Express"
+      },
+      "save": {
+        "seedId": "json.id"
+      }
+    },
+    {
+      "type": "open",
+      "url": "/dashboard"
+    },
+    {
+      "type": "check",
+      "value": "Hyderabad"
+    },
+    {
+      "type": "click",
+      "target": {
+        "describe": "New shipment",
+        "role": "button",
+        "fp": {
+          "tag": "button",
+          "type": "",
+          "role": "button",
+          "name": "New shipment",
+          "label": "",
+          "text": "New shipment",
+          "testId": null,
+          "id": "",
+          "idGenerated": true,
+          "nameAttr": "",
+          "placeholder": "",
+          "href": "",
+          "classes": [
+            "fade"
+          ],
+          "nearText": "Order To Status #1001 Hyderabad Booked",
+          "column": "",
+          "container": null,
+          "css": "main > div:nth-of-type(2) > button",
+          "box": {
+            "x": 260,
+            "y": 272,
+            "w": 127,
+            "h": 35
+          },
+          "vw": 1280,
+          "vh": 800,
+          "ok": [
+            "role",
+            "css"
+          ]
+        }
+      },
+      "effect": {
+        "url": "/new",
+        "requests": [
+          "GET /new"
+        ]
+      }
+    },
+    {
+      "type": "fill",
+      "target": {
+        "describe": "Destination city",
+        "fp": {
+          "tag": "input",
+          "type": "",
+          "role": "textbox",
+          "name": "Destination city",
+          "label": "Destination city",
+          "text": "",
+          "testId": null,
+          "id": "city",
+          "idGenerated": false,
+          "nameAttr": "city",
+          "placeholder": "",
+          "href": "",
+          "classes": [],
+          "nearText": "Destination city",
+          "column": "",
+          "container": null,
+          "css": "#city",
+          "box": {
+            "x": 260,
+            "y": 203,
+            "w": 760,
+            "h": 33
+          },
+          "vw": 1280,
+          "vh": 800,
+          "ok": [
+            "role",
+            "label",
+            "id",
+            "nameAttr",
+            "css"
+          ]
+        }
+      },
+      "value": "Vijayawada"
+    },
+    {
+      "type": "select",
+      "target": {
+        "describe": "Service",
+        "fp": {
+          "tag": "select",
+          "type": "",
+          "role": "combobox",
+          "name": "Service",
+          "label": "Service",
+          "text": "Standard Express",
+          "testId": null,
+          "id": "speed",
+          "idGenerated": false,
+          "nameAttr": "speed",
+          "placeholder": "",
+          "href": "",
+          "classes": [],
+          "nearText": "Service",
+          "column": "",
+          "container": null,
+          "css": "#speed",
+          "box": {
+            "x": 260,
+            "y": 269,
+            "w": 760,
+            "h": 35
+          },
+          "vw": 1280,
+          "vh": 800,
+          "ok": [
+            "role",
+            "label",
+            "id",
+            "nameAttr",
+            "css"
+          ]
+        }
+      },
+      "value": "Express"
+    },
+    {
+      "type": "click",
+      "target": {
+        "describe": "Save shipment",
+        "role": "button",
+        "fp": {
+          "tag": "button",
+          "type": "submit",
+          "role": "button",
+          "name": "Save shipment",
+          "label": "",
+          "text": "Save shipment",
+          "testId": null,
+          "id": "save-shipment",
+          "idGenerated": false,
+          "nameAttr": "",
+          "placeholder": "",
+          "href": "",
+          "classes": [],
+          "nearText": "Service",
+          "column": "",
+          "container": null,
+          "css": "#save-shipment",
+          "box": {
+            "x": 260,
+            "y": 320,
+            "w": 131,
+            "h": 35
+          },
+          "vw": 1280,
+          "vh": 800,
+          "ok": [
+            "role",
+            "id",
+            "css"
+          ]
+        }
+      },
+      "waitFor": "POST /api/orders",
+      "effect": {
+        "url": "/track/:id",
+        "requests": [
+          "GET /api/orders/:id",
+          "GET /track/:id",
+          "POST /api/orders"
+        ]
+      }
+    },
+    {
+      "type": "check",
+      "target": {
+        "testId": "order-status",
+        "describe": "Order status",
+        "fp": {
+          "tag": "span",
+          "type": "",
+          "role": "",
+          "name": "",
+          "label": "",
+          "text": "Booked",
+          "testId": {
+            "attr": "data-testid",
+            "value": "order-status"
+          },
+          "id": "",
+          "idGenerated": false,
+          "nameAttr": "",
+          "placeholder": "",
+          "href": "",
+          "classes": [
+            "status"
+          ],
+          "nearText": "Service: Express",
+          "column": "",
+          "container": null,
+          "css": "main > div > p:nth-of-type(3) > span",
+          "box": {
+            "x": 317,
+            "y": 254,
+            "w": 58,
+            "h": 20
+          },
+          "vw": 1280,
+          "vh": 800,
+          "ok": [
+            "testId",
+            "text",
+            "css"
+          ]
+        }
+      },
+      "value": "Booked"
+    },
+    {
+      "type": "check",
+      "value": "Vijayawada"
+    },
+    {
+      "type": "api",
+      "method": "DELETE",
+      "url": "/api/orders/{{seedId}}",
+      "headers": {
+        "Authorization": "Bearer demo-token"
+      },
+      "expectStatus": 204
+    }
+  ]
+}

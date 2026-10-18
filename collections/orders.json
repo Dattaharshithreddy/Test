@@ -1,0 +1,61 @@
+{
+  "name": "Orders API",
+  "items": [
+    {
+      "type": "request",
+      "id": "list",
+      "name": "List orders",
+      "method": "GET",
+      "url": "{{apiUrl}}/api/orders",
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "mode": "none"
+      },
+      "tests": "pm.test('200', () => pm.response.to.have.status(200));"
+    },
+    {
+      "type": "request",
+      "id": "create",
+      "name": "Create order",
+      "method": "POST",
+      "url": "{{apiUrl}}/api/orders",
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Bearer {{token}}"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "body": {
+        "mode": "json",
+        "raw": "{\"city\": \"Pune\", \"speed\": \"Express\"}"
+      },
+      "tests": "pm.test('201', () => pm.response.to.have.status(201));\npm.collectionVariables.set('orderId', pm.response.json().id);"
+    },
+    {
+      "type": "request",
+      "id": "one",
+      "name": "Get order",
+      "method": "GET",
+      "url": "{{apiUrl}}/api/orders/{{orderId}}",
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "mode": "none"
+      },
+      "tests": "pm.test('200', () => pm.response.to.have.status(200));"
+    }
+  ]
+}

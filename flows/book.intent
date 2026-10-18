@@ -1,0 +1,9 @@
+intent "Book a shipment"
+  base "{{webUrl}}"
+  session from "flows/track.flow.json"
+  given city = "Agra"
+  start at "/dashboard"
+  reach screen "Tracking"
+  expect text "Agra"
+  expect api "POST /api/orders" returns 201
+  always no server errors

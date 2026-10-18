@@ -1,0 +1,3 @@
+rule "Orders never go back"
+  for GET /api/orders/:id, GET /api/orders
+  field status moves only "Booked" -> "In transit" -> "Out for delivery" -> "Delivered"

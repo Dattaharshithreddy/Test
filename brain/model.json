@@ -1,0 +1,818 @@
+{
+ "version": 1,
+ "updatedAt": "2026-10-18T09:18:10.673Z",
+ "screens": {
+  "scr_8efde7d8": {
+   "id": "scr_8efde7d8",
+   "name": "New shipment",
+   "pattern": "/new",
+   "title": "New shipment · ShipTrack",
+   "landmarks": [
+    "b:save shipment",
+    "f:destination city",
+    "f:service",
+    "h:new shipment"
+   ],
+   "fields": [
+    "Destination city",
+    "Service"
+   ],
+   "buttons": [
+    "Save shipment"
+   ],
+   "columns": [],
+   "navLinks": [],
+   "seen": 9,
+   "firstSeen": "2026-10-18T09:18:00.815Z",
+   "lastSeen": "2026-10-18T09:18:10.519Z",
+   "sources": {
+    "flow": 9
+   },
+   "errorsShown": [],
+   "runAt": "2026-10-18T09:18:10.519Z",
+   "runSet": [
+    "b:save shipment",
+    "f:destination city",
+    "f:service",
+    "h:new shipment"
+   ],
+   "h1s": [
+    "New shipment"
+   ],
+   "titles": [
+    "New shipment · ShipTrack"
+   ],
+   "offers": [
+    "save shipment"
+   ],
+   "offersAt": "2026-10-18T09:18:10.519Z",
+   "meaning": [
+    "b:save shipment",
+    "form:destination city",
+    "form:service",
+    "h:new shipment"
+   ],
+   "meaningAt": "2026-10-18T09:18:10.519Z",
+   "components": [
+    {
+     "kind": "form",
+     "as": "form",
+     "fields": [
+      "destination city",
+      "service"
+     ]
+    }
+   ],
+   "runMeaning": [
+    "b:save shipment",
+    "form:destination city",
+    "form:service",
+    "h:new shipment"
+   ],
+   "runComponents": [
+    {
+     "kind": "form",
+     "as": "form",
+     "fields": [
+      "destination city",
+      "service"
+     ]
+    }
+   ],
+   "missing": {},
+   "quiet": 2,
+   "meaningBase": [
+    "b:save shipment",
+    "form:destination city",
+    "form:service",
+    "h:new shipment"
+   ],
+   "baseAs": [
+    "form"
+   ]
+  },
+  "scr_cae0f7dd": {
+   "id": "scr_cae0f7dd",
+   "name": "Sign in to ShipTrack",
+   "pattern": "/",
+   "title": "Sign in · ShipTrack",
+   "landmarks": [
+    "b:sign in",
+    "f:email",
+    "f:password",
+    "h:sign in to shiptrack"
+   ],
+   "fields": [
+    "Email",
+    "Password"
+   ],
+   "buttons": [
+    "Sign in"
+   ],
+   "columns": [],
+   "navLinks": [],
+   "seen": 9,
+   "firstSeen": "2026-10-18T09:18:00.815Z",
+   "lastSeen": "2026-10-18T09:18:10.519Z",
+   "sources": {
+    "flow": 9
+   },
+   "errorsShown": [],
+   "runAt": "2026-10-18T09:18:10.519Z",
+   "runSet": [
+    "b:sign in",
+    "f:email",
+    "f:password",
+    "h:sign in to shiptrack"
+   ],
+   "h1s": [
+    "Sign in to ShipTrack"
+   ],
+   "titles": [
+    "Sign in · ShipTrack"
+   ],
+   "offers": [
+    "sign in"
+   ],
+   "offersAt": "2026-10-18T09:18:10.519Z",
+   "meaning": [
+    "b:sign in",
+    "form:email",
+    "form:password",
+    "h:sign in to shiptrack"
+   ],
+   "meaningAt": "2026-10-18T09:18:10.519Z",
+   "components": [
+    {
+     "kind": "form",
+     "as": "form",
+     "fields": [
+      "email",
+      "password"
+     ]
+    }
+   ],
+   "runMeaning": [
+    "b:sign in",
+    "form:email",
+    "form:password",
+    "h:sign in to shiptrack"
+   ],
+   "runComponents": [
+    {
+     "kind": "form",
+     "as": "form",
+     "fields": [
+      "email",
+      "password"
+     ]
+    }
+   ],
+   "missing": {},
+   "quiet": 2,
+   "meaningBase": [
+    "b:sign in",
+    "form:email",
+    "form:password",
+    "h:sign in to shiptrack"
+   ],
+   "baseAs": [
+    "form"
+   ]
+  },
+  "scr_e11db351": {
+   "id": "scr_e11db351",
+   "name": "Tracking",
+   "pattern": "/track/:id",
+   "title": "Tracking · ShipTrack",
+   "landmarks": [
+    "h:tracking ##"
+   ],
+   "fields": [],
+   "buttons": [],
+   "columns": [],
+   "navLinks": [],
+   "seen": 9,
+   "firstSeen": "2026-10-18T09:18:00.815Z",
+   "lastSeen": "2026-10-18T09:18:10.519Z",
+   "sources": {
+    "flow": 9
+   },
+   "errorsShown": [],
+   "runAt": "2026-10-18T09:18:10.519Z",
+   "runSet": [
+    "h:tracking ##"
+   ],
+   "h1s": [
+    "Tracking"
+   ],
+   "titles": [
+    "Tracking · ShipTrack"
+   ],
+   "h1HadId": true,
+   "offers": [],
+   "offersAt": "2026-10-18T09:18:10.519Z",
+   "meaning": [
+    "h:tracking"
+   ],
+   "meaningAt": "2026-10-18T09:18:10.519Z",
+   "components": [],
+   "runMeaning": [
+    "h:tracking"
+   ],
+   "runComponents": [],
+   "missing": {},
+   "quiet": 2,
+   "meaningBase": [
+    "h:tracking"
+   ],
+   "baseAs": []
+  },
+  "scr_fb5eb82c": {
+   "id": "scr_fb5eb82c",
+   "name": "Shipments",
+   "pattern": "/dashboard",
+   "title": "Shipments · ShipTrack",
+   "landmarks": [
+    "b:new shipment",
+    "c:order",
+    "c:status",
+    "c:to",
+    "h:shipments"
+   ],
+   "fields": [],
+   "buttons": [
+    "New shipment"
+   ],
+   "columns": [
+    "Order",
+    "To",
+    "Status"
+   ],
+   "navLinks": [],
+   "seen": 12,
+   "firstSeen": "2026-10-18T09:18:00.815Z",
+   "lastSeen": "2026-10-18T09:18:10.519Z",
+   "sources": {
+    "flow": 12
+   },
+   "errorsShown": [],
+   "runAt": "2026-10-18T09:18:10.519Z",
+   "runSet": [
+    "c:order",
+    "c:status",
+    "c:to",
+    "h:shipments",
+    "b:new shipment"
+   ],
+   "h1s": [
+    "Shipments"
+   ],
+   "titles": [
+    "Shipments · ShipTrack"
+   ],
+   "offers": [
+    "##",
+    "new shipment",
+    "/dashboard"
+   ],
+   "offersAt": "2026-10-18T09:18:10.519Z",
+   "meaning": [
+    "b:new shipment",
+    "collection:order",
+    "collection:status",
+    "collection:to",
+    "h:shipments"
+   ],
+   "meaningAt": "2026-10-18T09:18:10.519Z",
+   "components": [
+    {
+     "kind": "collection",
+     "as": "table",
+     "fields": [
+      "order",
+      "to",
+      "status"
+     ],
+     "count": 3
+    }
+   ],
+   "runMeaning": [
+    "b:new shipment",
+    "collection:order",
+    "collection:status",
+    "collection:to",
+    "h:shipments"
+   ],
+   "runComponents": [
+    {
+     "kind": "collection",
+     "as": "table",
+     "fields": [
+      "order",
+      "to",
+      "status"
+     ],
+     "count": 3
+    }
+   ],
+   "missing": {},
+   "quiet": 2,
+   "meaningBase": [
+    "collection:order",
+    "collection:status",
+    "collection:to",
+    "h:shipments"
+   ],
+   "baseAs": [
+    "table"
+   ]
+  }
+ },
+ "transitions": {
+  "(start)|open:/|scr_cae0f7dd": {
+   "key": "(start)|open:/|scr_cae0f7dd",
+   "from": "(start)",
+   "to": "scr_cae0f7dd",
+   "action": {
+    "type": "open",
+    "label": "/"
+   },
+   "count": 3,
+   "ok": 3,
+   "fail": 0,
+   "flows": [
+    "Customer can create and track a shipment"
+   ],
+   "apis": [],
+   "firstSeen": "2026-10-18T09:18:00.815Z",
+   "lastSeen": "2026-10-18T09:18:10.519Z",
+   "url": "/",
+   "samples": [
+    109,
+    108,
+    71
+   ]
+  },
+  "scr_8efde7d8|click:save shipment|scr_e11db351": {
+   "key": "scr_8efde7d8|click:save shipment|scr_e11db351",
+   "from": "scr_8efde7d8",
+   "to": "scr_e11db351",
+   "action": {
+    "type": "click",
+    "label": "Save shipment"
+   },
+   "count": 3,
+   "ok": 3,
+   "fail": 0,
+   "flows": [
+    "Customer can create and track a shipment"
+   ],
+   "apis": [
+    "POST /api/orders",
+    "GET /api/orders/:id"
+   ],
+   "firstSeen": "2026-10-18T09:18:00.815Z",
+   "lastSeen": "2026-10-18T09:18:10.519Z",
+   "target": {
+    "describe": "Save shipment",
+    "role": "button",
+    "fp": {
+     "tag": "button",
+     "type": "submit",
+     "role": "button",
+     "name": "Save shipment",
+     "label": "",
+     "text": "Save shipment",
+     "testId": null,
+     "id": "save-shipment",
+     "idGenerated": false,
+     "nameAttr": "",
+     "placeholder": "",
+     "href": "",
+     "classes": [],
+     "nearText": "Service",
+     "column": "",
+     "container": null,
+     "css": "#save-shipment",
+     "box": {
+      "x": 260,
+      "y": 320,
+      "w": 131,
+      "h": 35
+     },
+     "vw": 1280,
+     "vh": 800,
+     "ok": [
+      "role",
+      "id",
+      "css"
+     ]
+    }
+   },
+   "waitFor": "POST /api/orders",
+   "inputs": [
+    {
+     "type": "fill",
+     "label": "Destination city",
+     "value": "Vijayawada",
+     "secret": false
+    },
+    {
+     "type": "select",
+     "label": "Service",
+     "value": "Express",
+     "secret": false
+    }
+   ],
+   "samples": [
+    642,
+    587,
+    605
+   ]
+  },
+  "scr_cae0f7dd|click:sign in|scr_fb5eb82c": {
+   "key": "scr_cae0f7dd|click:sign in|scr_fb5eb82c",
+   "from": "scr_cae0f7dd",
+   "to": "scr_fb5eb82c",
+   "action": {
+    "type": "click",
+    "label": "Sign in"
+   },
+   "count": 3,
+   "ok": 3,
+   "fail": 0,
+   "flows": [
+    "Customer can create and track a shipment"
+   ],
+   "apis": [
+    "POST /api/login",
+    "GET /api/orders"
+   ],
+   "firstSeen": "2026-10-18T09:18:00.815Z",
+   "lastSeen": "2026-10-18T09:18:10.519Z",
+   "target": {
+    "describe": "Sign in",
+    "role": "button",
+    "fp": {
+     "tag": "button",
+     "type": "submit",
+     "role": "button",
+     "name": "Sign in",
+     "label": "",
+     "text": "Sign in",
+     "testId": null,
+     "id": "login-btn",
+     "idGenerated": false,
+     "nameAttr": "",
+     "placeholder": "",
+     "href": "",
+     "classes": [],
+     "nearText": "Password",
+     "column": "",
+     "container": null,
+     "css": "#login-btn",
+     "box": {
+      "x": 260,
+      "y": 318,
+      "w": 78,
+      "h": 35
+     },
+     "vw": 1280,
+     "vh": 800,
+     "ok": [
+      "role",
+      "id",
+      "css"
+     ]
+    }
+   },
+   "waitFor": "POST /api/login",
+   "inputs": [
+    {
+     "type": "fill",
+     "label": "Email",
+     "value": "{{user}}",
+     "secret": false
+    },
+    {
+     "type": "fill",
+     "label": "Password",
+     "secret": true
+    }
+   ],
+   "samples": [
+    739,
+    581,
+    593
+   ]
+  },
+  "scr_fb5eb82c|click:new shipment|scr_8efde7d8": {
+   "key": "scr_fb5eb82c|click:new shipment|scr_8efde7d8",
+   "from": "scr_fb5eb82c",
+   "to": "scr_8efde7d8",
+   "action": {
+    "type": "click",
+    "label": "New shipment"
+   },
+   "count": 3,
+   "ok": 3,
+   "fail": 0,
+   "flows": [
+    "Customer can create and track a shipment"
+   ],
+   "apis": [],
+   "firstSeen": "2026-10-18T09:18:00.815Z",
+   "lastSeen": "2026-10-18T09:18:10.519Z",
+   "target": {
+    "describe": "New shipment",
+    "role": "button",
+    "fp": {
+     "tag": "button",
+     "type": "",
+     "role": "button",
+     "name": "New shipment",
+     "label": "",
+     "text": "New shipment",
+     "testId": null,
+     "id": "",
+     "idGenerated": true,
+     "nameAttr": "",
+     "placeholder": "",
+     "href": "",
+     "classes": [
+      "fade"
+     ],
+     "nearText": "Order To Status #1001 Hyderabad Booked",
+     "column": "",
+     "container": null,
+     "css": "main > div:nth-of-type(2) > button",
+     "box": {
+      "x": 260,
+      "y": 272,
+      "w": 127,
+      "h": 35
+     },
+     "vw": 1280,
+     "vh": 800,
+     "ok": [
+      "role",
+      "css"
+     ]
+    }
+   },
+   "samples": [
+    721,
+    1455,
+    694
+   ]
+  },
+  "scr_fb5eb82c|open:/dashboard|scr_fb5eb82c": {
+   "key": "scr_fb5eb82c|open:/dashboard|scr_fb5eb82c",
+   "from": "scr_fb5eb82c",
+   "to": "scr_fb5eb82c",
+   "action": {
+    "type": "open",
+    "label": "/dashboard"
+   },
+   "count": 3,
+   "ok": 3,
+   "fail": 0,
+   "flows": [
+    "Customer can create and track a shipment"
+   ],
+   "apis": [
+    "GET /api/orders"
+   ],
+   "firstSeen": "2026-10-18T09:18:00.815Z",
+   "lastSeen": "2026-10-18T09:18:10.519Z",
+   "url": "/dashboard",
+   "samples": [
+    62,
+    80,
+    56
+   ]
+  }
+ },
+ "apis": {
+  "DELETE /api/orders/:id": {
+   "key": "DELETE /api/orders/:id",
+   "method": "DELETE",
+   "pattern": "/api/orders/:id",
+   "statuses": {
+    "204": 3
+   },
+   "count": 3,
+   "screens": [],
+   "sources": {
+    "flow": 3
+   },
+   "firstSeen": "2026-10-18T09:18:00.815Z",
+   "lastSeen": "2026-10-18T09:18:10.519Z",
+   "samples": [
+    28,
+    25,
+    29
+   ]
+  },
+  "GET /api/orders": {
+   "key": "GET /api/orders",
+   "method": "GET",
+   "pattern": "/api/orders",
+   "statuses": {
+    "200": 7
+   },
+   "count": 7,
+   "screens": [
+    "scr_fb5eb82c"
+   ],
+   "sources": {
+    "flow": 6,
+    "api": 1
+   },
+   "firstSeen": "2026-10-18T09:18:00.815Z",
+   "lastSeen": "2026-10-18T09:18:10.525Z",
+   "samples": [
+    71,
+    53,
+    52,
+    52,
+    60,
+    69,
+    35
+   ],
+   "shape": [
+    {
+     "id": "number",
+     "status": "string",
+     "speed": "string",
+     "city": "string"
+    }
+   ],
+   "shapeSamples": 7,
+   "always": []
+  },
+  "GET /api/orders/:id": {
+   "key": "GET /api/orders/:id",
+   "method": "GET",
+   "pattern": "/api/orders/:id",
+   "statuses": {
+    "200": 4
+   },
+   "count": 4,
+   "screens": [
+    "scr_e11db351"
+   ],
+   "sources": {
+    "flow": 3,
+    "api": 1
+   },
+   "firstSeen": "2026-10-18T09:18:00.815Z",
+   "lastSeen": "2026-10-18T09:18:10.525Z",
+   "samples": [
+    59,
+    61,
+    41,
+    38
+   ],
+   "shape": {
+    "id": "number",
+    "status": "string",
+    "speed": "string",
+    "city": "string"
+   },
+   "shapeSamples": 4,
+   "always": [
+    "id",
+    "status",
+    "speed",
+    "city"
+   ]
+  },
+  "POST /api/login": {
+   "key": "POST /api/login",
+   "method": "POST",
+   "pattern": "/api/login",
+   "statuses": {
+    "0": 3
+   },
+   "count": 3,
+   "screens": [
+    "scr_fb5eb82c"
+   ],
+   "sources": {
+    "flow": 3
+   },
+   "firstSeen": "2026-10-18T09:18:00.815Z",
+   "lastSeen": "2026-10-18T09:18:10.519Z",
+   "samples": [
+    72,
+    63,
+    77
+   ]
+  },
+  "POST /api/orders": {
+   "key": "POST /api/orders",
+   "method": "POST",
+   "pattern": "/api/orders",
+   "statuses": {
+    "201": 7
+   },
+   "count": 7,
+   "screens": [
+    "scr_e11db351"
+   ],
+   "sources": {
+    "flow": 6,
+    "api": 1
+   },
+   "firstSeen": "2026-10-18T09:18:00.815Z",
+   "lastSeen": "2026-10-18T09:18:10.525Z",
+   "samples": [
+    71,
+    67,
+    26,
+    81,
+    39,
+    66,
+    27
+   ],
+   "shape": {
+    "id": "number",
+    "status": "string",
+    "speed": "string",
+    "city": "string"
+   },
+   "shapeSamples": 5,
+   "always": [
+    "id",
+    "status",
+    "speed",
+    "city"
+   ]
+  }
+ },
+ "links": {
+  "GET /api/orders/:id#city@scr_e11db351": {
+   "id": "GET /api/orders/:id#city@scr_e11db351",
+   "api": "GET /api/orders/:id",
+   "field": "city",
+   "screen": "scr_e11db351",
+   "label": "Destination",
+   "hits": 3,
+   "misses": 0,
+   "lastSeen": "2026-10-18T09:18:10.519Z"
+  },
+  "GET /api/orders/:id#speed@scr_e11db351": {
+   "id": "GET /api/orders/:id#speed@scr_e11db351",
+   "api": "GET /api/orders/:id",
+   "field": "speed",
+   "screen": "scr_e11db351",
+   "label": "Service",
+   "hits": 3,
+   "misses": 0,
+   "lastSeen": "2026-10-18T09:18:10.519Z"
+  },
+  "GET /api/orders/:id#status@scr_e11db351": {
+   "id": "GET /api/orders/:id#status@scr_e11db351",
+   "api": "GET /api/orders/:id",
+   "field": "status",
+   "screen": "scr_e11db351",
+   "label": "Status",
+   "hits": 3,
+   "misses": 0,
+   "lastSeen": "2026-10-18T09:18:10.519Z"
+  },
+  "POST /api/orders#city@scr_e11db351": {
+   "id": "POST /api/orders#city@scr_e11db351",
+   "api": "POST /api/orders",
+   "field": "city",
+   "screen": "scr_e11db351",
+   "label": "Destination",
+   "hits": 1,
+   "misses": 0,
+   "lastSeen": "2026-10-18T09:18:10.519Z"
+  },
+  "POST /api/orders#speed@scr_e11db351": {
+   "id": "POST /api/orders#speed@scr_e11db351",
+   "api": "POST /api/orders",
+   "field": "speed",
+   "screen": "scr_e11db351",
+   "label": "Service",
+   "hits": 1,
+   "misses": 0,
+   "lastSeen": "2026-10-18T09:18:10.519Z"
+  },
+  "POST /api/orders#status@scr_e11db351": {
+   "id": "POST /api/orders#status@scr_e11db351",
+   "api": "POST /api/orders",
+   "field": "status",
+   "screen": "scr_e11db351",
+   "label": "Status",
+   "hits": 1,
+   "misses": 0,
+   "lastSeen": "2026-10-18T09:18:10.519Z"
+  }
+ },
+ "runs": 4
+}
